@@ -1337,7 +1337,7 @@ html {
 /* Button */
 
 #forward a{
-    position: absolute;
+    position: relative;
     left: 46%;
     color: black;
     font-size: 500%;
@@ -1755,22 +1755,6 @@ html {
 			background: #3d4249 url("images/overlay.png");
 		}
 
-/* Logo */
-
-	#logo h1 {
-		font-weight: 900;
-		text-transform: uppercase;
-		color: black;
-        line-height: -20em
-	}
-
-/*
-	#logo p {
-		color: #587D95;
-		text-transform: uppercase;
-	}
-*/
-
 /* Who I am */
 
 	#intro > .style2 {
@@ -1784,22 +1768,6 @@ html {
 			color: inherit;
 			text-decoration: none;
 		}
-
-/*
-#intro > #columns > .column{
-    float: left;
-    height: 100%;
-    width: 33.33%;
-    padding: 20%
-}
-
-#intro > #columns {
-    display: table;
-    content: "";
-    clear: both;
-    column-gap: 100%
-}
-*/
 
 #columns {
     float: left;
@@ -2153,29 +2121,12 @@ html {
 
 			#logo {
 				position: absolute;
-				height: 5em;
-				top: 30%;
-				left: 0;
-				width: 100%;
-				text-align: center;
-				margin-top: -0.5em;
+                height: 100%;
+                left: 47%;
+                text-align: center;
+                top: 0;  
 			}
 
-			.homepage #logo {
-				margin-top: -1em;
-			}
-
-			#logo h1 {
-				font-size: 2em;
-				letter-spacing: 0.25em;
-			}
-
-			#logo p {
-				margin: 1.25em 0 0 0;
-				display: block;
-				letter-spacing: 0.2em;
-				font-size: 0.9em;
-			}
 
 		/* Nav */
 
@@ -2425,10 +2376,6 @@ html {
 			}
 
 		/* Logo */
-
-			#logo {
-				margin-top: -0.5em !important;
-			}
 
 				#logo h1 {
 					font-size: 1.75em;
