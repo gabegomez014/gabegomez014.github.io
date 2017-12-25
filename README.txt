@@ -1,4 +1,4 @@
-Being modified by Gabriel Gomez for his portfolio website. Currently a work in progress.
+Being modified by me, Gabriel Gomez, for my portfolio website. Currently a work in progress.
 
 Special thanks to HTML5 UP for providing me with the groundwork for creating my portfolio website.
 
