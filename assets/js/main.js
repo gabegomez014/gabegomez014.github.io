@@ -7,6 +7,17 @@
 /*jslint browser: true*/
 /*global $, jQuery*/
 
+// Come back to this when we land. Need to find how to continuously check scoll height when scrolls happen.
+
+//function scrollCheck() {
+//    var scrollPos = window.scrollY;
+//    console.log("The window is at Scroll position " + scrollPos);
+//}
+//
+//
+//window.addEventListener("onscroll", scrollCheck);
+    
+
 function move() {
     var title = document.getElementById("intro-wrapper");
     var top = zenscroll.getTopOf(title) - 100;

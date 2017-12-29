@@ -1113,6 +1113,7 @@ html {
 
 		a:hover {
 			text-decoration: none;
+            color: #2B3D49
 		}
 
 	strong, b {
@@ -1338,7 +1339,7 @@ html {
 
 #forward a{
     position: relative;
-    left: 46%;
+    left: 48%;
     color: black;
     font-size: 500%;
     text-decoration: none;
@@ -1503,7 +1504,7 @@ html {
 /* Feature List */
 
 	.feature-list h3 {
-		color: #e97770 !important;
+		color: white !important;
 	}
 
 		.feature-list h3:before {
@@ -1541,7 +1542,7 @@ html {
     .fa-linkedin::before {
         position: relative;
         border-radius: 120px;
-        border: solid 3px #858F95;
+        border: solid 3px #b1bfc9;
         height: 40px;
         width: 40px;
         line-height: 1.5em;
@@ -1552,7 +1553,7 @@ html {
     .fa-facebook::before {
         position: relative;
         border-radius: 120px;
-        border: solid 3px #858F95;
+        border: solid 3px #b1bfc9;
         height: 40px;
         width: 40px;
         line-height: 1.6em;
@@ -1563,7 +1564,7 @@ html {
     .fa-github-alt::before {
         position: relative;
         border-radius: 120px;
-        border: solid 3px #858F95;
+        border: solid 3px #b1bfc9;
         height: 40px;
         width: 40px;
         line-height: 1.5em;
@@ -1676,6 +1677,10 @@ html {
 		#footer-wrapper h1, #footer-wrapper h2, #footer-wrapper h3, #footer-wrapper h4, #footer-wrapper h5, #footer-wrapper h6, #footer-wrapper strong, #footer-wrapper b, #footer-wrapper a {
 			color: #fff;
 		}
+
+        #footer-wrapper a:hover {
+            color: #b1bfc9;
+        }
 
 		#footer-wrapper hr {
 			border-top-color: #333;
@@ -2041,6 +2046,7 @@ html {
 
 			.feature-list.small p {
 				margin: 0 0 0 4em;
+                color: #cfd2d8
 			}
 
 		/* Box */
@@ -2122,10 +2128,10 @@ html {
 			#logo {
 				position: absolute;
                 height: 100%;
-                left: 47%;
+                left: 45.5%;
                 text-align: center;
-                top: 0;  
-			}
+                top: 0;
+            }
 
 
 		/* Nav */
@@ -2139,16 +2145,18 @@ html {
 				text-align: center;
                 z-index: 9999;
                 background-color: #858F95;
-                height: 3em;
+                height: 6em;
 			}
 
-/*				#nav > ul {
+/*
+				#nav > ul {
 					display: inline-block;
 					border-radius: 0.35em;
 					box-shadow: inset 0px 0px 2px 2px rgba(177,191, 201, 1);
 					padding: 0 1.5em 0 1.5em;
 				}
 */
+
 					#nav > ul > li {
 						display: inline-block;
 						text-align: center;
@@ -2161,20 +2169,21 @@ html {
 
 						#nav > ul > li > a, #nav > ul > li > span {
 							display: block;
-							color: #eee;
-							color: rgba(255, 255, 255, 0.75);
-							text-transform: uppercase;
-							text-decoration: none;
-							font-size: 0.7em;
-							letter-spacing: 0.25em;
-							height: 3em;
-							line-height: 4em;
-							-moz-transition: all .25s ease-in-out;
-							-webkit-transition: all .25s ease-in-out;
-							-o-transition: all .25s ease-in-out;
-							-ms-transition: all .25s ease-in-out;
-							transition: all .25s ease-in-out;
-							outline: 0;
+                            color: #eee;
+                            color: rgba(255, 255, 255, 0.75);
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-size: 80%;
+                            letter-spacing: 0.25em;
+                            line-height: 7em;
+                            -moz-transition: all .25s ease-in-out;
+                            -webkit-transition: all .25s ease-in-out;
+                            -o-transition: all .25s ease-in-out;
+                            -ms-transition: all .25s ease-in-out;
+                            transition: all .25s ease-in-out;
+                            outline: 0;
+                            left: 35%;
+                            position: relative;
 						}
 
 						#nav > ul > li:hover > a {
