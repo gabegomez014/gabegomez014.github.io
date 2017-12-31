@@ -9,25 +9,20 @@
 
 // Come back to this when we land. Need to find how to continuously check scoll height when scrolls happen.
 
-//function scrollCheck() {
-//    var scrollPos = window.scrollY;
-//    console.log("The window is at Scroll position " + scrollPos);
-//}
-//
-//
-//window.addEventListener("onscroll", scrollCheck);
-    
-
-function move() {
-    var title = document.getElementById("intro-wrapper");
-    var top = zenscroll.getTopOf(title) - 100;
-    zenscroll.toY(top);
-    
-}
-
-
-var scroll = document.getElementById("scroll");
-scroll.addEventListener("click", move);
+$(document).ready(function(){
+    var scrollTop = 0;
+    $(window).scroll(function(){
+        scrollTop = $(window).scrollTop();
+        
+        if(scrollTop >= 75) {
+            console.log("we are greater than 75 pixels");
+        }
+        
+        else {
+            console.log("we are less than 75 pixels");
+        }
+    });
+});
 
 
 (function($) {
