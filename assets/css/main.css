@@ -2114,7 +2114,7 @@ html {
 			#header {
 				position: relative;
 				padding: 12em 0;
-                background: url("../../images/wolf.jpg") center center;
+                background: #f3f3f3;
 		        background-size: cover;
                 opacity: 0.7
 			}
@@ -2124,16 +2124,53 @@ html {
 			}
 
 		/* Logo */
+        #logoBox {
+                display: inline;
+                position: absolute;
+                height: 50%;
+                width: 100%;
+                top: 29%;
+        }
 
 			#logo {
 				position: absolute;
                 height: 100%;
-                left: 45.5%;
+                left: 37%;
                 text-align: center;
                 top: 0;
+                opacity: 0;
+                animation: fadeIn 2s ease-in;
+                animation-fill-mode: forwards
             }
+        
+        @keyframes fadeIn {
+            from {opacity: 0}
+            to {opacity: 1}
+        }
+        
+        .topLine { 
+            position: relative;
+            top: -1%;
+            height: 1px;
+            background: black;
+            background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+            opacity: 0;
+            animation: fadeIn 3s ease-in;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards
+        }
 
-
+        .bottomLine {
+            position: relative;
+            top: 101%;
+            height: 1px;
+            background: black;
+            background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+            opacity: 0;
+            animation: fadeIn 3s ease-in;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards
+        }
 		/* Nav */
 
 			#nav {
