@@ -2174,17 +2174,33 @@ html {
 		/* Nav */
 
 			#nav {
-				position: absolute;
+                display: none;
                 position: fixed;
 				top: 0;
 				left: 0;
 				width: 100%;
 				text-align: center;
-                z-index: 9999;
                 background-color: #858F95;
                 height: 6em;
+                opacity: 0.65
 			}
+        
+            
+        #navTri {
+            display: inline-flex;
+            position: fixed;
+            display: inline-flex;
+            top: 0%;
+            left: 46.5%;
+            z-index: 9999;
 
+        }
+        
+        #navPoly {
+            fill: #858F95;
+            opacity: 0.65;
+            
+        }
 /*
 				#nav > ul {
 					display: inline-block;
