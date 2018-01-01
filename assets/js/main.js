@@ -9,20 +9,55 @@
 
 // Come back to this when we land. Need to find how to continuously check scoll height when scrolls happen.
 
+var scrollTop = 0;
+var bool = false;
+var boolCount = 0;
+
 $(document).ready(function(){
-    var scrollTop = 0;
     $(window).scroll(function(){
         scrollTop = $(window).scrollTop();
         
-        if(scrollTop >= 75) {
-            console.log("we are greater than 75 pixels");
+        if($(window).scrollTop() >= 75) {
+            bool = true;
+            
+            if (bool == true) {
+                if (boolCount == 0) {
+                    $("#triDiv").css("opacity", "1");
+                    $("#triDiv").animate({top: '0'},600);
+                    $("#triLogo").animate({top: '0.3%'},600); 
+                    $("#mainNav").animate({top: '-20%'},600);
+                    
+                }
+                
+                boolCount = 1;
+            }
         }
         
         else {
-            console.log("we are less than 75 pixels");
+            bool = false;
+            
+            if (bool == false) {
+                if(boolCount == 1) {
+                    $("#triDiv").animate({top: '-10%'},600);
+                    $("#triLogo").animate({top: '-9.3%'},600);
+                    $("#triDiv").delay(1).animate({opacity: "0"});
+                    $("#mainNav").animate({top: '0'},600);
+                }
+                
+                boolCount = 0
+            }
+            
+            
         }
+        
     });
 });
+
+//$(document).ready(function() {
+//    $(window).scroll(function(){
+//      console.log("scrollTop is " + $(window).scrollTop());  
+//    })
+//});
 
 
 (function($) {

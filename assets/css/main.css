@@ -2173,8 +2173,8 @@ html {
         }
 		/* Nav */
 
-			#nav {
-                display: none;
+			#mainNav {
+                display: block;
                 position: fixed;
 				top: 0;
 				left: 0;
@@ -2185,42 +2185,71 @@ html {
                 opacity: 0.65
 			}
         
+/*
+            .navTri > #mainNav {
+                display: none;
+                position: fixed;
+				top: -15%;
+				left: 0;
+				width: 100%;
+				text-align: center;
+                background-color: #858F95;
+                height: 6em;
+                opacity: 0.65;
+			}
+*/
             
-        #navTri {
-            display: inline-flex;
+        
+/*
+        .navTri > #triDiv{
+            display:block;
             position: fixed;
-            display: inline-flex;
             top: 0%;
-            left: 46.5%;
+            left: 45%;
+            fill: #858F95;
+            fill-opacity: 0.65;
+            z-index: 99999
+        }
+*/
+        
+        #triLogo {
+            position: fixed;
+            height: 6.5%;
+            width: 4.5%;
+            top: -9.7%;
+            right: 48.7%;
+        }
+        
+        #navSvg {
+            top: 0%;
+        }
+        
+        #triDiv {
+            display: block;
+            position: fixed;
+            top: -10%;
+            left: 45%;
             z-index: 9999;
-
+            opacity: 0;
         }
         
         #navPoly {
             fill: #858F95;
-            opacity: 0.65;
-            
+            fill-opacity: 0.65
         }
-/*
-				#nav > ul {
-					display: inline-block;
-					border-radius: 0.35em;
-					box-shadow: inset 0px 0px 2px 2px rgba(177,191, 201, 1);
-					padding: 0 1.5em 0 1.5em;
-				}
-*/
-
-					#nav > ul > li {
+        
+        
+					#mainNav > ul > li {
 						display: inline-block;
 						text-align: center;
 						padding: 0em 8% 0 5.5%;
 					}
 
-						#nav > ul > li > ul {
+						#mainNav > ul > li > ul {
 							display: none;
 						}
 
-						#nav > ul > li > a, #nav > ul > li > span {
+						#mainNav > ul > li > a, #mainNav > ul > li > span {
 							display: block;
                             color: #eee;
                             color: rgba(255, 255, 255, 0.75);
@@ -2239,11 +2268,11 @@ html {
                             position: relative;
 						}
 
-						#nav > ul > li:hover > a {
+						#mainNav > ul > li:hover > a {
 							color: #2B3D49;
 						}
 
-						#nav > ul > li.active > a, #nav > ul > li.active > span {
+						#mainNav > div > ul > li.active > a, #mainNav > div > ul > li.active > span {
 							color: #fff;
 						}
 
