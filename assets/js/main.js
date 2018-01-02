@@ -11,25 +11,29 @@
 
 var scrollTop = 0;
 var bool = false;
-var boolCount = 0;
+var navTriCheck = 0;
+var mainNavCheck = 0;
+var animationTime = 700;
 
+// This is for the nav change from the main to the
+// navTri
 $(document).ready(function(){
     $(window).scroll(function(){
         scrollTop = $(window).scrollTop();
         
-        if($(window).scrollTop() >= 75) {
+        if(scrollTop >= 75) {
             bool = true;
             
             if (bool == true) {
-                if (boolCount == 0) {
+                if (navTriCheck == 0) {
                     $("#triDiv").css("opacity", "1");
-                    $("#triDiv").animate({top: '0'},600);
-                    $("#triLogo").animate({top: '0.3%'},600); 
-                    $("#mainNav").animate({top: '-20%'},600);
-                    
-                }
-                
-                boolCount = 1;
+                    $("#triDiv").animate({top: '0'},animationTime);
+                    $("#triLogo").animate({top: '0.2em'},animationTime); 
+                    $("#mainNav").animate({top: '-20%'},animationTime);   
+                    $("#logoBox").animate({top: '+=25%', opacity: '0'}, animationTime);
+                    $("#header").animate({paddingBottom: "-=20em"}, animationTime-50,"swing");
+                }   
+                navTriCheck = 1;
             }
         }
         
@@ -37,27 +41,38 @@ $(document).ready(function(){
             bool = false;
             
             if (bool == false) {
-                if(boolCount == 1) {
-                    $("#triDiv").animate({top: '-10%'},600);
-                    $("#triLogo").animate({top: '-9.3%'},600);
+                if(navTriCheck == 1) {
+                    $("#triDiv").animate({top: '-10%'},animationTime);
+                    $("#triLogo").animate({top: '-9.3%'},animationTime);
                     $("#triDiv").delay(1).animate({opacity: "0"});
-                    $("#mainNav").animate({top: '0'},600);
-                }
-                
-                boolCount = 0
-            }
-            
-            
+                    $("#mainNav").animate({top: '0'},animationTime);
+                    $("#logoBox").animate({top: '-=25%', opacity: 1}, animationTime);
+                    $("#header").animate({paddingBottom: "+=20em"}, animationTime-50, "swing");
+                }    
+                navTriCheck = 0;
+                mainNavCheck = 0;
+            }            
         }
         
     });
+    
+    $("#triDiv").mouseenter(function(){
+        $("#triDiv").animate({top: "-10%"}, animationTime);
+        $("#triLogo").animate({top: "-9.3%"},animationTime);
+        $("#mainNav").animate({top:'0'}, animationTime);
+        mainNavCheck = 1;
+    });
+    
+    $("#mainNav").mouseleave(function(){
+        if(mainNavCheck == 1) {
+            $("#mainNav").animate({top: '-20%'}, animationTime);
+            $("#triLogo").animate({top: '0'}, animationTime);
+            $("#triDiv").animate({top: '0'}, animationTime);
+        } 
+    });
 });
 
-//$(document).ready(function() {
-//    $(window).scroll(function(){
-//      console.log("scrollTop is " + $(window).scrollTop());  
-//    })
-//});
+
 
 
 (function($) {
@@ -102,13 +117,13 @@ $(document).ready(function(){
 				);
 			});
 
-		// Dropdowns.
-			$('#nav > ul').dropotron({
-				mode: 'fade',
-				noOpenerFade: true,
-				alignment: 'center',
-				detach: false
-			});
+//		// Dropdowns.
+//			$('#nav > ul').dropotron({
+//				mode: 'fade',
+//				noOpenerFade: true,
+//				alignment: 'center',
+//				detach: false
+//			});
 
 		// Off-Canvas Navigation.
 

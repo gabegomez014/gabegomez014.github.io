@@ -2120,7 +2120,7 @@ html {
 			}
 
 			.homepage #header {
-				padding: 18em 0;
+				padding-bottom: 35em
 			}
 
 		/* Logo */
@@ -2181,62 +2181,34 @@ html {
 				width: 100%;
 				text-align: center;
                 background-color: #858F95;
-                height: 6em;
-                opacity: 0.65
+                height: 4em;
+                z-index: 9999
 			}
         
-/*
-            .navTri > #mainNav {
-                display: none;
+            #triLogo {
+                height: 45px;
+                width: 50px;
+                top: -9.7%;
+                right: 23%;
+                position: absolute;
+            }
+
+            #navSvg {
+                top: 0%;
+            }
+
+            #triDiv {
+                display: inline-flex;
                 position: fixed;
-				top: -15%;
-				left: 0;
-				width: 100%;
-				text-align: center;
-                background-color: #858F95;
-                height: 6em;
-                opacity: 0.65;
-			}
-*/
-            
-        
-/*
-        .navTri > #triDiv{
-            display:block;
-            position: fixed;
-            top: 0%;
-            left: 45%;
-            fill: #858F95;
-            fill-opacity: 0.65;
-            z-index: 99999
-        }
-*/
-        
-        #triLogo {
-            position: fixed;
-            height: 6.5%;
-            width: 4.5%;
-            top: -9.7%;
-            right: 48.7%;
-        }
-        
-        #navSvg {
-            top: 0%;
-        }
-        
-        #triDiv {
-            display: block;
-            position: fixed;
-            top: -10%;
-            left: 45%;
-            z-index: 9999;
-            opacity: 0;
-        }
-        
-        #navPoly {
-            fill: #858F95;
-            fill-opacity: 0.65
-        }
+                top: -10%;
+                left: 45%;
+                z-index: 9999;
+                opacity: 0;
+            }
+
+            #navPoly {
+                fill: #858F95;
+            }
         
         
 					#mainNav > ul > li {
@@ -2257,7 +2229,7 @@ html {
                             text-decoration: none;
                             font-size: 80%;
                             letter-spacing: 0.25em;
-                            line-height: 7em;
+                            line-height: 5em;
                             -moz-transition: all .25s ease-in-out;
                             -webkit-transition: all .25s ease-in-out;
                             -o-transition: all .25s ease-in-out;
@@ -2275,53 +2247,6 @@ html {
 						#mainNav > div > ul > li.active > a, #mainNav > div > ul > li.active > span {
 							color: #fff;
 						}
-
-/*
-        Not implementing drop down menu
-        
-			.dropotron {
-				background: #222835 url("images/overlay.png");
-				background-color: rgba(44, 50, 63, 0.925);
-				padding: 1.25em 1em 1.25em 1em;
-				border-radius: 0.35em;
-				box-shadow: inset 0px 0px 1px 1px black;
-				min-width: 12em;
-				text-align: left;
-				margin-top: -1.25em;
-				margin-left: -1px;
-			}
-
-				.dropotron.level-0 {
-					margin-top: -1px;
-					margin-left: 0;
-					border-top-left-radius: 0;
-					border-top-right-radius: 0;
-				}
-
-				.dropotron a, .dropotron span {
-					-moz-transition: all .25s ease-in-out;
-					-webkit-transition: all .25s ease-in-out;
-					-ms-transition: all .25s ease-in-out;
-					transition: all .25s ease-in-out;
-					display: block;
-					color: #eee;
-					color: rgba(255, 255, 255, 0.75);
-					text-transform: uppercase;
-					text-decoration: none;
-					font-size: 0.7em;
-					letter-spacing: 0.25em;
-					border-top: solid 1px rgba(255, 255, 255, 0.15);
-					line-height: 3em;
-				}
-
-				.dropotron li:first-child a, .dropotron li:first-child span {
-					border-top: 0;
-				}
-
-				.dropotron li:hover > a, .dropotron li:hover > span {
-					color: #fff;
-				}
-*/
 
 		/* Intro */
 
