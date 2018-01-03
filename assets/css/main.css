@@ -1435,7 +1435,7 @@ html {
 		input[type="reset"].style3,
 		button.style3,
 		.button.style3 {
-			background: #2f333b url("images/overlay.png");
+			background: #2f333b ;
 			color: #fff;
 		}
 */
@@ -1510,7 +1510,7 @@ html {
 			position: relative;
 			display: inline-block;
 			color: #fff;
-			background: #2f333b url("images/overlay.png");
+			background: #2f333b ;
 			border-radius: 1em;
 			text-align: center;
 		}
@@ -1613,13 +1613,13 @@ html {
 			}
 
 		.wrapper.style1 {
-			background: #587D95 url("images/overlay.png");
+			background: #858F95 ;
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #587D95 url("images/overlay.png");
+				background: #858F95;
 				color: #fff;
 			}
 
@@ -1646,8 +1646,13 @@ html {
 			}
 
 			.wrapper.style3 .image {
-				border: solid 6px #587D95;
+				border: solid 6px #497795;
+                transition: border 1s
 			}
+
+        .wrapper.style3 .image:hover {
+            border: solid 6px #2B3D49;
+        }
 
 /*
 	#header-wrapper {
@@ -1664,11 +1669,11 @@ html {
 			left: 0;
 			width: 100%;
 			height: 10%;
-			background: url("images/overlay.png");
+			background: ;
 		}
 
 	#footer-wrapper {
-		background: #587D95;
+		background: #858F95;
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 	}
@@ -1738,7 +1743,7 @@ html {
 			}
 
 		#footer-wrapper .title {
-			background: #587D95;
+			background: #858F95;
 			color: #eee;
 		}
 
@@ -1756,7 +1761,7 @@ html {
 		}
 
 		#footer-wrapper .feature-list h3:before {
-			background: #3d4249 url("images/overlay.png");
+			background: #3d4249 ;
 		}
 
 /* Who I am */
@@ -1797,7 +1802,7 @@ html {
     position: relative;
     display: inline-block;
     color: white;
-    background: #587D95;
+    background: #497795;
     border-radius: 100%;
     border: 3px solid white; 
     text-align: center;
@@ -1812,7 +1817,7 @@ html {
     position: relative;
     display: inline-block;
     color: white;
-    background: #587D95;
+    background: #497795;
     border-radius: 100%;
     border: 3px solid white; 
     text-align: center;
@@ -1827,7 +1832,7 @@ html {
     position: relative;
     display: inline-block;
     color: white;
-    background: #587D95;
+    background: #497795;
     border-radius: 100%;
     border: 3px solid white; 
     text-align: center;
@@ -1878,7 +1883,12 @@ html {
     }
 
     #examples {
-        color: #2B3D49
+        color: #497795;
+        transition: color 1s
+    }
+
+    #examples:hover {
+        color: #2B3D49;
     }
 
     #project1 {
@@ -1889,17 +1899,18 @@ html {
     #project1:before {
         position: absolute;
         content:" ";
+        display: block;
         top:0;
         left:0;
         width:100%;
         height:100%;
         z-index:0;
-        display: none
+        opacity: 0;
+        background: #2B3D49;
+        transition: opacity 1s
     }
 
     #project1:hover:before {
-        display: block;
-        background: #2B3D49;
         opacity: 0.35
     }
 
@@ -2201,7 +2212,7 @@ html {
 				left: 0;
 				width: 100%;
 				text-align: center;
-                background-color: #858F95;
+                background-color: #497795;
                 height: 4em;
                 z-index: 9999
 			}
@@ -2228,7 +2239,8 @@ html {
             }
 
             #navPoly {
-                fill: #858F95;
+                fill: #497795;
+                fill-opacity:0.75
             }
         
         
@@ -2671,7 +2683,7 @@ html {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #242730 url("images/overlay.png");
+				background: #242730 ;
 				box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
 			}
 
