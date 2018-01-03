@@ -1383,7 +1383,7 @@ html {
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #2B3D49;
+			background: #497795;
 			color: #fff;
 		}
 
@@ -1392,7 +1392,7 @@ html {
 			input[type="reset"].style1:hover,
 			button.style1:hover,
 			.button.style1:hover {
-				background-color: #585E62;
+				background-color: #2B3D49;
 			}
 
 			input[type="button"].style1:active,
@@ -1400,7 +1400,7 @@ html {
 			input[type="reset"].style1:active,
 			button.style1:active,
 			.button.style1:active {
-				background-color: #d96760;
+				background-color: #2B3D49;
 			}
 
 		input[type="button"].style2,
@@ -1761,7 +1761,7 @@ html {
 		}
 
 		#footer-wrapper .feature-list h3:before {
-			background: #3d4249 ;
+			background: #497795 ;
 		}
 
 /* Who I am */
