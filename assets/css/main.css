@@ -167,7 +167,7 @@ html {
 	}
 
 /* Grid */
-
+    
 	.row {
 		border-bottom: solid 1px transparent;
 		-moz-box-sizing: border-box;
@@ -1883,7 +1883,7 @@ html {
     }
 
     #examples {
-        color: #497795;
+        color: #858F95;
         transition: color 1s
     }
 
@@ -2376,6 +2376,8 @@ html {
 						}
 
 	}
+
+    /* Projects Page */
 
 /* Tablet Only */
 

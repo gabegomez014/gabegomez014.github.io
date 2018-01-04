@@ -18,43 +18,57 @@ var animationTime = 700;
 // This is for the nav change from the main to the
 // navTri
 $(document).ready(function(){
-    $(window).scroll(function(){
-        scrollTop = $(window).scrollTop();
-        
-        if(scrollTop >= 75) {
-            bool = true;
-            
-            if (bool == true) {
-                if (navTriCheck == 0) {
-                    $("#triDiv").css("opacity", "1");
-                    $("#triDiv").animate({top: '0'},animationTime);
-                    $("#triLogo").animate({top: '0.2em'},animationTime); 
-                    $("#mainNav").animate({top: '-20%'},animationTime);   
-                    $("#logoBox").animate({top: '+=25%', opacity: '0'}, animationTime);
-                    $("#header").animate({paddingBottom: "-=20em"}, animationTime-50,"swing");
-                }   
-                navTriCheck = 1;
+    // Projects page functionality
+    var currentPage = window.location.pathname;
+    
+    // Home functionality
+    if (currentPage == "/index.html"){
+        $(window).scroll(function(){
+            scrollTop = $(window).scrollTop();
+
+            if(scrollTop >= 75) {
+                bool = true;
+
+                if (bool == true) {
+                    if (navTriCheck == 0) {
+                        $("#triDiv").css("opacity", "1");
+                        $("#triDiv").animate({top: '0'},animationTime);
+                        $("#triLogo").animate({top: '0.2em'},animationTime); 
+                        $("#mainNav").animate({top: '-20%'},animationTime);   
+                        $("#logoBox").animate({top: '+=25%', opacity: '0'}, animationTime);
+                        $("#header").animate({paddingBottom: "-=20em"}, animationTime-50,"swing");
+                    }   
+                    navTriCheck = 1;
+                }
             }
-        }
-        
-        else {
-            bool = false;
-            
-            if (bool == false) {
-                if(navTriCheck == 1) {
-                    $("#triDiv").animate({top: '-10%'},animationTime);
-                    $("#triLogo").animate({top: '-9.3%'},animationTime);
-                    $("#triDiv").delay(1).animate({opacity: "0"});
-                    $("#mainNav").animate({top: '0'},animationTime);
-                    $("#logoBox").animate({top: '-=25%', opacity: 1}, animationTime);
-                    $("#header").animate({paddingBottom: "+=20em"}, animationTime-50, "swing");
-                }    
-                navTriCheck = 0;
-                mainNavCheck = 0;
-            }            
-        }
-        
-    });
+
+            else {
+                bool = false;
+
+                if (bool == false) {
+                    if(navTriCheck == 1) {
+                        $("#triDiv").animate({top: '-10%'},animationTime);
+                        $("#triLogo").animate({top: '-9.3%'},animationTime);
+                        $("#triDiv").delay(1).animate({opacity: "0"});
+                        $("#mainNav").animate({top: '0'},animationTime);
+                        $("#logoBox").animate({top: '-=25%', opacity: 1}, animationTime);
+                        $("#header").animate({paddingBottom: "+=20em"}, animationTime-50, "swing");
+                    }    
+                    navTriCheck = 0;
+                    mainNavCheck = 0;
+                }            
+            }
+
+        });
+    }
+    
+    else {
+        $("#triDiv").css("top", "0");
+        $("#triDiv").css("opacity", "1");
+        $("#triLogo").css("top", "0.2em");
+        $("#mainNav").css("top", "-20%");
+    }
+    
     
     $("#triDiv").mouseenter(function(){
         $("#triDiv").animate({top: "-10%"}, animationTime);
@@ -71,8 +85,7 @@ $(document).ready(function(){
         } 
     });
 });
-
-
+    
 
 
 (function($) {
