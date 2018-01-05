@@ -2188,6 +2188,10 @@ html {
                 width: 100%;
                 top: 29%;
         }
+        
+        #logoBox h1{
+            display: none;
+        }
 
 			#logo {
 				position: absolute;
@@ -2434,7 +2438,7 @@ html {
 			}
 
 			#intro-wrapper {
-				padding-bottom: 15em;
+				padding-bottom: 20em;
 			}
 
 			#footer-wrapper hr {
@@ -2463,6 +2467,10 @@ html {
 				#logo h1 {
 					font-size: 1.75em;
 				}
+        
+        #logoBox h1 {
+            display: none;
+        }
 
 		/* Intro/ Who I am */
 
@@ -2481,6 +2489,10 @@ html {
             
         .column p {
             bottom: 2%
+        }
+        
+        h3#projectsP {
+            margin-top: 5%
         }
 
 		/* Copyright */
@@ -2622,6 +2634,10 @@ html {
 			}
 
 		/* Off-Canvas Navigation */
+        
+        #nav-wrapper {
+            display: none
+        }
 
 			#page-wrapper {
 				-moz-backface-visibility: hidden;
@@ -2795,6 +2811,11 @@ html {
 				padding: 15px 15px 5em 15px;
                 padding-bottom: 25em;
 			}
+        
+        .wrapper.style1 {
+            display: inline-flex;
+            padding-bottom: 5em;
+        }
 
 				.wrapper .title {
 					font-size: 0.9em;
@@ -2814,10 +2835,10 @@ html {
 					}
 
 			#header-wrapper {
-				padding: 5% 15% 5% 15%;
-                line-height: 600%;
+				padding: 5% 15% 20% 15%;
+                line-height: 120%;
                 height: 100%;
-                background: url("../../images/wolf.jpg") center center;
+                background: white;
                 background-size: cover;
                 opacity: 1
 			}
@@ -2842,14 +2863,27 @@ html {
 
 			#logo {
 				text-align: center;
+                height: 100%;
+                width: 50%;
+                position: relative;
+                left: 5em;
+                top: 2em
 			}
+        
+        #triDiv {
+            display: none
+        }
 
-				#logo h1 {
-					font-size: 1.5em;
-					letter-spacing: 0.2em;
+				#logoBox h1 {
+					    font-size: 4em;
+                        letter-spacing: 0.2em;
+                        position: relative;
+                        left: 50px;
+                        height: 100%;
+                        width: 50%
 				}
 
-				#logo p {
+				#logoBox p {
 					margin: 1.25em 0 0 0;
 					display: block;
 					letter-spacing: 0.2em;
@@ -2877,25 +2911,48 @@ html {
 					padding: 1.25em;
 				}
         
+        
+        #column1 {
+            float: left;
+            width: 100%;
+            position: relative;
+            right: 2%
+        }
+        
+        #column2 {
+            float: left;
+            width: 100%;
+            position: relative;
+            right: 2%
+        }
+        
+        #column3 {
+            float: left;
+            width: 100%;
+            position: relative;
+            right: 2%
+        }
+        
             .column h3 {
                 top: 2.5em;
                 right: 1em;
             }
         
             #column1 h3::before {
-                left: 26%
+                left: 60px
             }
         
             #column2 h3::before {
-                left: 31%
+                left: 68px
             }
         
             #column3 h3::before {
-                left: 35%
+                left: 82px
             }
         
             .column p {
-                top: 2em
+                top: 2em;
+                left: 20px
             }
 
 		/* Main */
@@ -2903,6 +2960,10 @@ html {
 			#main {
 				padding: 1em 0 0 0;
 			}
+        
+        h3#projectsP {
+            margin-top: 15%
+        }
 
 		/* Content */
 
@@ -2913,12 +2974,25 @@ html {
 				#content header.style1 {
 					padding-bottom: 2.5em;
 				}
+        
+        .projectsHeader {
+            line-height: 120%
+        }
+        
+        .wrapper.style3 {
+            padding-bottom: 10em
+        }
 
 		/* Footer */
 
 			#footer hr {
 				display: none;
 			}
+        
+        #footer p {
+            color: white;
+            line-height: 20px
+        }
 
 		/* Copyright */
 

@@ -14,16 +14,17 @@ var bool = false;
 var navTriCheck = 0;
 var mainNavCheck = 0;
 var animationTime = 700;
+var screenWidth = $(window).width();
 
 // This is for the nav change from the main to the
 // navTri
 $(document).ready(function(){
     // Projects page functionality
     var currentPage = window.location.pathname;
-    console.log(currentPage)
     
     // Home functionality
     if (currentPage == "/index.html" || currentPage == "/"){
+        if (screenWidth >= 737) {
         $(window).scroll(function(){
             scrollTop = $(window).scrollTop();
 
@@ -61,6 +62,7 @@ $(document).ready(function(){
             }
 
         });
+        }
     }
     
     else {
@@ -87,7 +89,6 @@ $(document).ready(function(){
     });
 });
     
-
 
 (function($) {
 	skel
@@ -131,13 +132,6 @@ $(document).ready(function(){
 				);
 			});
 
-//		// Dropdowns.
-//			$('#nav > ul').dropotron({
-//				mode: 'fade',
-//				noOpenerFade: true,
-//				alignment: 'center',
-//				detach: false
-//			});
 
 		// Off-Canvas Navigation.
 
@@ -154,7 +148,7 @@ $(document).ready(function(){
 				$(
 					'<div id="navPanel">' +
 						'<nav>' +
-							$('#nav').navList() +
+							$('#mainNav').navList() +
 						'</nav>' +
 					'</div>'
 				)
