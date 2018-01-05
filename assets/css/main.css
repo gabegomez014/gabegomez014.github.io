@@ -675,6 +675,7 @@ html {
 
 		.row.\31 50\25 > * {
 			padding: 52.5px 0 0 52.5px;
+            text-align: center
 		}
 
 		.row.\31 50\25 {
@@ -1158,6 +1159,7 @@ html {
 
 	p, ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
+        color: black;
 	}
 
 /* Table */
@@ -1284,6 +1286,7 @@ html {
 	section:last-child,
 	article:last-child {
 		margin-bottom: 0;
+        color: black
 	}
 
 	header.style1 {
@@ -1295,8 +1298,19 @@ html {
 		}
 
 		header.style1 p {
-			color: #b1b4b9;
+			color: white;
 		}
+
+        header.styleP p {
+            color: #6b6e7b
+        }
+
+    .projectsHeader {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 6%;
+            margin-top: 4%;
+    }
 
 /* Image */
 
@@ -1332,7 +1346,13 @@ html {
 		.image.featured {
 			display: inline-grid;
 			width: 100%;
+            border: 6px solid #497795;
+            transition: border 1s
 		}
+
+        .image.featured:hover {
+            border: 6px solid #2B3D49
+        }
 
 /* Button */
 
@@ -1784,6 +1804,10 @@ html {
     text-align: center
 }
 
+#columns p {
+    color: white
+}
+
 .column h3 {
     position: relative;
     height: 100%;
@@ -2078,7 +2102,7 @@ html {
 
 			.feature-list.small p {
 				margin: 0 0 0 4em;
-                color: #cfd2d8
+                color: white
 			}
 
 		/* Box */
@@ -2148,7 +2172,7 @@ html {
 				padding: 12em 0;
                 background: #f3f3f3;
 		        background-size: cover;
-                opacity: 0.7
+                opacity: 1
 			}
 
 			.homepage #header {
@@ -2240,7 +2264,7 @@ html {
 
             #navPoly {
                 fill: #497795;
-                fill-opacity:0.75
+                fill-opacity:1
             }
         
         
@@ -2425,6 +2449,13 @@ html {
 			.homepage #header {
 				padding: 14em 0;
 			}
+        
+            .projectsHeader {
+                font-size: 2em;
+                text-align: center;
+                margin-bottom: 6%;
+                margin-top: 4%;
+            }
 
 		/* Logo */
 
@@ -2787,7 +2818,7 @@ html {
                 height: 100%;
                 background: url("../../images/wolf.jpg") center center;
                 background-size: cover;
-                opacity: 0.7
+                opacity: 1
 			}
         
         
