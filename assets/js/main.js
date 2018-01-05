@@ -23,7 +23,7 @@ $(document).ready(function(){
     console.log(currentPage)
     
     // Home functionality
-    if (currentPage == "/index.html"){
+    if (currentPage == "/index.html" || currentPage == "/"){
         $(window).scroll(function(){
             scrollTop = $(window).scrollTop();
 
