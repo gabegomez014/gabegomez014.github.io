@@ -1286,7 +1286,8 @@ html {
 	section:last-child,
 	article:last-child {
 		margin-bottom: 0;
-        color: black
+        color: black;
+        text-align: center
 	}
 
 	header.style1 {
