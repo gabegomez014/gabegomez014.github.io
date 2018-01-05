@@ -80,7 +80,7 @@ $(document).ready(function(){
     $("#mainNav").mouseleave(function(){
         if(mainNavCheck == 1) {
             $("#mainNav").animate({top: '-20%'}, animationTime);
-            $("#triLogo").animate({top: '0'}, animationTime);
+            $("#triLogo").animate({top: '0.2em'}, animationTime);
             $("#triDiv").animate({top: '0'}, animationTime);
         } 
     });
