@@ -20,6 +20,7 @@ var animationTime = 700;
 $(document).ready(function(){
     // Projects page functionality
     var currentPage = window.location.pathname;
+    console.log(currentPage)
     
     // Home functionality
     if (currentPage == "/index.html"){
