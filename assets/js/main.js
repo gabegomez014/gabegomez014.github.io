@@ -87,6 +87,7 @@ $(document).ready(function(){
             $("#triDiv").animate({top: '0'}, animationTime);
         } 
     });
+    
 });
     
 
